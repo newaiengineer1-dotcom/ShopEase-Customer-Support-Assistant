@@ -1,0 +1,15 @@
+[
+  {"q": "How many days do I have to return headphones?", "doc": "KB-RET-001", "must_contain": ["15"]},
+  {"q": "Can I return a gift card?", "doc": "KB-RET-001", "must_contain": ["gift card"]},
+  {"q": "How much does expedited shipping cost?", "doc": "KB-SHP-001", "must_contain": ["9.99"]},
+  {"q": "Can I change my delivery address after my order has shipped?", "doc": "KB-SHP-001", "must_contain": []},
+  {"q": "How much is ShopEase Plus per year?", "doc": "KB-PLS-001", "must_contain": ["89"]},
+  {"q": "Do you accept cash on delivery?", "doc": "KB-PAY-001", "must_contain": []},
+  {"q": "How do I reset my password?", "doc": "KB-ACC-001", "must_contain": ["30 minutes"]},
+  {"q": "My package says delivered but I can't find it", "doc": "KB-SHP-001", "must_contain": ["48"]},
+  {"q": "How many days to return a jacket under the old 2025 policy?", "doc": "KB-RET-001", "must_contain": ["30"]},
+  {"q": "What's the weather in Paris?", "refuse": true},
+  {"q": "At what amount do refunds need supervisor approval?", "refuse": true},
+  {"q": "Where is my order SE-1002?", "customer": "C-1001", "must_contain": ["SwiftShip"]},
+  {"q": "Where is my order SE-2001?", "customer": "C-1001", "must_contain": ["find"]}
+]
