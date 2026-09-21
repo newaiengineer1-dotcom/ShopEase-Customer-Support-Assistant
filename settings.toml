@@ -1,0 +1,41 @@
+# Non-secret tunables. Secrets, provider and model live in .env
+
+[app]
+name = "ShopEase Customer Support Assistant"
+max_input_chars = 1000
+history_turns = 6
+
+[paths]                        # relative to project root
+kb_dir = "knowledge_base"
+index_dir = "storage/index"
+data_dir = "data"
+storage_dir = "storage"
+rules = "config/policy_rules.json"
+
+[kb]
+chunk_size_words = 160
+chunk_overlap_words = 30
+min_chunk_words = 6
+
+[embedding]
+provider = "sentence-transformers"     # sentence-transformers | hash (offline tests only)
+model = "BAAI/bge-small-en-v1.5"
+query_prefix = "Represent this sentence for searching relevant passages: "
+batch_size = 32
+
+[retrieval]
+mode = "hybrid"                # semantic | hybrid
+top_k = 5
+candidates = 20
+similarity_threshold = 0.45    # min cosine to count as evidence. CALIBRATE: python scripts/evaluate.py
+min_evidence_chunks = 1
+
+[llm]
+temperature = 0.0
+max_tokens = 1500              # reasoning models spend part of this budget on hidden reasoning
+timeout_s = 45
+
+[verify]
+llm_verifier = true            # second-opinion judge (1 extra fast-model call per answer)
+min_support_coverage = 0.4     # share of a sentence's content words found in its cited evidence
+max_repairs = 1
