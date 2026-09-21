@@ -1,0 +1,6 @@
+{
+  "return_window_days": {"default": 30, "electronics": 15},
+  "defect_window_days": 30,
+  "non_returnable_categories": ["grocery", "gift_card", "digital"],
+  "human_support_response_hours": 24
+}
