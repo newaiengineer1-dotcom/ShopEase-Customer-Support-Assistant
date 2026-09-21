@@ -1,0 +1,19 @@
+{
+  "defaults": {"version": "2026.1", "effective_date": "2026-01-01", "access_level": "public", "status": "active",
+               "source": "ShopEase Help Center (fictional sample)"},
+  "documents": [
+    {"document_id": "KB-RET-001", "filename": "returns_and_refunds_policy.md", "title": "Returns and Refunds Policy", "category": "returns"},
+    {"document_id": "KB-RET-000", "filename": "returns_policy_2025_superseded.md", "title": "Returns Policy (2025 edition)", "category": "returns",
+     "version": "2025.2", "effective_date": "2025-01-01", "status": "superseded"},
+    {"document_id": "KB-SHP-001", "filename": "shipping_and_delivery.md", "title": "Shipping and Delivery", "category": "shipping"},
+    {"document_id": "KB-CAN-001", "filename": "cancellations_and_order_changes.md", "title": "Cancellations and Order Changes", "category": "orders"},
+    {"document_id": "KB-PLS-001", "filename": "plus_membership.md", "title": "ShopEase Plus Membership", "category": "membership"},
+    {"document_id": "KB-PAY-001", "filename": "payments_and_billing.txt", "title": "Payments and Billing", "category": "payments"},
+    {"document_id": "KB-ACC-001", "filename": "account_and_security.md", "title": "Account and Security", "category": "account"},
+    {"document_id": "KB-DMG-001", "filename": "damaged_defective_and_warranty.md", "title": "Damaged, Defective and Warranty", "category": "warranty"},
+    {"document_id": "KB-INT-001", "filename": "internal_refund_approval_playbook.md", "title": "Internal Refund Approval Playbook", "category": "internal",
+     "access_level": "internal", "source": "ShopEase Support Operations (internal)"},
+    {"document_id": "KB-GFT-001", "filename": "gift_cards_and_promotions.pdf", "title": "Gift Cards and Promotions", "category": "payments", "optional": true},
+    {"document_id": "KB-MKT-001", "filename": "marketplace_sellers.docx", "title": "Marketplace Sellers", "category": "orders", "optional": true}
+  ]
+}
