@@ -1,0 +1,5 @@
+[theme]
+primaryColor = "#0F62FE"   # no "base" set, so it follows the visitor's light/dark preference
+
+[browser]
+gatherUsageStats = false
